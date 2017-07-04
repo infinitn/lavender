@@ -1,8 +1,28 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  padding: 0;
+  margin: 0;
 }
-
-a {
-  color: #00B7FF;
+header{
+  width: 100%;
+  height: 182px;
+  background: url("/images/hed.jpg") repeat-x;
+}
+section{
+  width: 100%;
+  height: 667px;
+  background-color: #461B6A;
+}
+section .index-sec{
+  width: 80%;
+  height: 667px;
+  margin: 0 auto;
+  background: url("/images/nybj1.jpg") no-repeat;
+  -webkit-background-size:100% 100%;
+  background-size:100% 100%;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  background: url("/images/foot.jpg") repeat-x;
+  background-color: #461B6A;
 }

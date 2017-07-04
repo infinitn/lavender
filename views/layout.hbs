@@ -2,9 +2,26 @@
 <html>
   <head>
     <title>{{title}}</title>
+      <link rel="stylesheet" href="/css/reset.css">
     <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
-    {{{body}}}
+    <header>
+        <div class="logo">
+            <a href="http://localhost:3000/"><img src="/images/zxy_03.jpg" alt=""></a>
+            <ul>
+                <!--待处理 链接跳转问题-->
+                <li><a href="./page1.hbs">网站首页</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="index-sec">
+            {{{body}}}
+        </div>
+    </section>
+    <footer>
+
+    </footer>
   </body>
 </html>
