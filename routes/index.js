@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/about', function(req, res, next) {
     res.render('./about',{
-        message:req.query.message
+        message:req.query.message,
+        about_nav
     });
 });
 router.get('/activity', function(req, res, next) {
@@ -36,5 +37,14 @@ router.get('/map', function(req, res, next) {
         message:req.query.message
     });
 });
-//待处理  注册路由
+
+//about页面数据
+var about_nav = [
+    {title:'交通指引'},
+    {title:'庄园介绍'},
+    {title:'庄园美景'},
+    {title:'香草商店'},
+    {title:'婚纱婚庆'},
+    {title:'市场合作'},
+]
 module.exports = router;
