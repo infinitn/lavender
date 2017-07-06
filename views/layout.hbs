@@ -3,22 +3,69 @@
   <head>
     <title>{{title}}</title>
       <link rel="stylesheet" href="/css/reset.css">
-    <link rel='stylesheet' href='/css/style.css' />
+      <link rel="stylesheet" href="/css/layout.css">
+      <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
       <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/layout.js"></script>
   </head>
   <body>
     <header>
         <div class="logo">
-            <a href="http://localhost:3000/"><img src="/images/zxy_03.jpg" alt=""></a>
-            <ul>
-                <li><a href="http://localhost:3000/">网站首页</a></li>
-                <li><a href="./about">关于庄园</a></li>
-                <li><a href="./activity">庄园活动</a></li>
-                <li><a href="./play">玩在庄园</a></li>
-                <li><a href="./eat">吃在庄园</a></li>
-                <li><a href="./reside">住在庄园</a></li>
-                <li><a href="./map">庄园全景图</a></li>
-                <!--<li><a href="./page1">在线购票</a></li>-->
+            <a href="http://localhost:3000/" class="h_logo"><img src="/images/zxy_03.jpg" alt=""></a>
+
+            <ul class="nav">
+                <li class="h_n_child"><a href="http://localhost:3000/">网站首页</a></li>
+                <li class="h_n_child"><a href="./about">关于庄园</a>
+                    <ul class="second-nav">
+                        <li><a href="#">交通指引<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">庄园介绍<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">庄园美景<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">香草商店<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">婚纱婚庆<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">市场合作<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
+                <li class="h_n_child"><a href="./activity">庄园活动</a>
+                    <ul class="second-nav">
+                        <li><a href="#">薰衣草音乐节<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">光影动漫节<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">最新动态<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">精彩活动<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
+                <li class="h_n_child"><a href="./play">玩在庄园</a>
+                    <ul class="second-nav">
+                        <li><a href="#">美颜温泉<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">卡丁车<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">游乐场<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">儿童乐园<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">高尔夫<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">网球<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">室内泳池<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
+                <li class="h_n_child"><a href="./eat">吃在庄园</a>
+                    <ul class="second-nav">
+                        <li><a href="#">钢琴餐厅<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">主体餐厅<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">会所<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">美食部落<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
+                <li class="h_n_child"><a href="./reside">住在庄园</a>
+                    <ul class="second-nav">
+                        <li><a href="#">国际度假小镇<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">薰衣草客栈<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="#">客站配套<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
+                <li class="h_n_child"><a href="./map">庄园全景图</a>
+                    <ul class="second-nav">
+                        <li><a href="">薰衣草庄园<img src="/images/zxy_11.jpg"></a></li>
+                        <li><a href="">温泉度假小镇<img src="/images/zxy_11.jpg"></a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </header>
@@ -28,6 +75,25 @@
         </div>
     </section>
     <footer>
+        <div class="foot">
+            <div class="f_ewm">
+                <div class="f_ewm1">
+                    <img src="/images/ewm.jpg" alt="">
+                </div>
+               <div class="f_ewm2">
+                   <img src="/images/ewm2.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="f_banquan">
+                <p>版权所有：中国·洛阳薰衣草庄园　　地址：龙门大道转高铁大道向东3公里</p>
+                <br><br>
+                <a href="http://ww.miitbeian.gov.cn">备案号：豫ICP备14006302号-1</a>
+            </div>
+            <div class="f_phone">
+                <div class="f_phone_num">0379-67676699</div>
+            </div>
+        </div>
 
     </footer>
   </body>

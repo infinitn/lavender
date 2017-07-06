@@ -1,0 +1,149 @@
+/*公共总体样式*/
+html,body,div,ul,li,a{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100%;
+	font:20px/1.2 "Yahei";
+	background-color: #461B6A;
+}
+a{
+	text-decoration: none;
+}
+header{
+	height: 180px;
+	width: 1400px;
+	margin:0 auto;
+	border-bottom: 2px inset #674288;
+}
+section{
+	height: 650px;
+	width: 1400px;
+	margin: 0 auto;
+}
+footer{
+	height: 120px;
+	width: 1400px;
+	margin: 0 auto;
+	border-top:1px outset #7A2292;
+	position: relative;
+}
+.logo{
+	width: 1400px;
+	height: 180px;
+	position: relative;
+}
+.h_logo{
+	width: 180px;
+	height: 150px;
+	float: left;
+}
+header .nav{
+	width: 1120px;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 200px;
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+}
+header .nav li{
+	float: left;
+	width:150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-image: linear-gradient(top,#802396,#7A2292,#391867);
+	background-image: -webkit-linear-gradient(top,#802396,#7A2292,#391867);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border:2px #742C92 inset;
+	margin-right: 10px;
+
+}
+.h_n_child{
+	border-radius: 10px;
+}
+header .nav li a{
+	color: #fff;
+}
+header .nav li .second-nav{
+	width: 150px;
+	display: none;
+	position: relative;
+
+}
+header .nav li .second-nav li{
+	position: relative;
+	width: 95%;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	background: rgba(123,34,147,0.4);
+	border-bottom:1px dashed white;
+	z-index:2;
+}
+header .nav li .second-nav li a:hover{
+	color:#C7BA20;
+}
+
+/*footer*/
+.foot{
+	width: 1000px;
+	margin: 0 auto;
+}
+.f_ewm{
+	position: absolute;
+	left: 0;
+	top: -155px;
+	width: 250px;
+	height: 142px;
+	background-color: #461B6A;
+	overflow: hidden;
+	padding:3px 5px;
+}
+.f_ewm1{
+	width: 115px;
+	height: 142px;
+	float: left;
+	border:1px solid white;
+	margin-right:5px;
+}
+.f_ewm2{
+	width: 115px;
+	height: 142px;
+	float: left;
+	border:1px solid white;
+	margin-left:5px;
+}
+.f_banquan{
+	float: left;
+	width: 600px;
+	margin-top: 10px;
+	left: 200px;
+	font-size: 14px;
+	color:white;
+	/*text-align: center;*/
+}
+.f_banquan>a{
+	color: #fff;
+}
+.f_phone{
+	float: left;
+	background: url(../images/di.png);
+	width: 244px;
+	height: 55px;
+	margin-top:-10px;
+	color:#f6e399;
+	font-size: 24px;
+	display: inline-block;
+}
+.f_phone{
+	text-align: center;
+	line-height:55px;
+}
+
+
+
