@@ -18,7 +18,7 @@ header{
 	border-bottom: 2px inset #674288;
 }
 section{
-	height: 596px;
+	height: 650px;
 	width: 1400px;
 	margin: 0 auto;
 }
@@ -144,5 +144,6 @@ header .nav li .second-nav li a:hover{
 	text-align: center;
 	line-height:55px;
 }
+
 
 

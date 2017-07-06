@@ -1,0 +1,105 @@
+#eat_wrap{
+    background: url("../images/nybj1.jpg") no-repeat;
+    width: 1400px;
+    height: 646px;
+    margin: 0 auto;
+}
+.eat_box{
+    width: 980px;
+    height: 646px;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.eat_left{
+    width: 180px;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.eat_right{
+    width: 800px;
+    float: left;
+}
+.eat_l_bt{
+    width: 180px;
+    height: 80px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    color: #461B6A;
+    position: relative;
+}
+.eat_l_cn{
+    font-size: 28px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.eat_l_en{
+    font-size: 16px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+.eat_l_bt::after{
+    content: '';
+    width: 45px;
+    height: 60px;
+    background: url("../images/nybt.png");
+    background-size:100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+/*右边*/
+.eat_r_wrap{
+    width: 800px;
+    height: 600px;
+
+}
+.eat_r_wrap p{
+    text-align: center;
+}
+.eat_r_wrap p span{
+    text-align: left;
+}
+.eat_r_nav{
+    width: 800px;
+    height: 30px;
+    background-color: #8e72a6;
+    padding-left:15px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.eat_r_nav>ul{
+    list-style: none;
+
+}
+.eat_r_nav>ul li{
+    height: 30px;
+    width: 90px;
+    color: white;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+}
+.eat_r_nav>ul li:hover{
+    background-color:#664184;
+    cursor: pointer;
+}
+.eat_r_content,.eat_r_scrollbar{
+    width: 800px;
+    height: 500px;
+}
+.eat_r_s_item{
+    width: 800px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.eat_r_s_item>ul{
+    display: none;
+}
+.eat_r_s_item>ul:nth-child(1){
+    display: block;
+}
+
