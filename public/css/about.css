@@ -1,6 +1,76 @@
 .box{
     width: 980px;
-    height: 500px;
-    background-color: #2b542c;
+    height: 600px;
     margin: 0 auto;
+}
+.title{
+    width: 290px;
+    height: 60px;
+    float: left;
+    color: #461B6A;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    right:15px;
+    top:10px;
+    width: 65px;
+    height: 81px;
+    background: url("/images/nybt.png");
+}
+.title .ti{
+    font-size: 25px;
+}
+/*nav*/
+.nav{
+    width: 690px;
+    height: 600px;
+    float: right;
+    padding-top: 40px;
+}
+.nav ul{
+    height: 28px;
+    width: 690px;
+
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav ul li{
+    float: left;
+    width: 115px;
+    background-color: #8E72A6;
+    transition: all 1s ease 0s;
+}
+.nav ul li:hover{
+    background-color: #471C6C;
+}
+
+.custom-scroll{
+    width: 660px;
+    height: 530px;
+    margin-top: 4px;
+    overflow: auto;
+    color: #664184;
+    font-size: 18px;
+    line-height: 50px;
+}
+.custom-scroll .txt{
+    text-indent: 50px;
+}
+.custom-scroll img{
+    width: 640px;
+}
+#allmap{
+    width: 640px;
+    height: 640px;
+}
+.recommend p{
+    text-indent: 50px;
 }

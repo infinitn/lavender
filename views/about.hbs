@@ -1,18 +1,117 @@
+<link rel="stylesheet" href="./css/about.css">
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rSypO9uLv1GGqFk5ES9Lwasyp5NypeSN"></script>
 <div class="box">
-    <div>
-        <h1>关于庄园</h1>
-        <h2>ABOUT US</h2>
+    <div class="title">
+        <div class="ti">关于庄园</div>
+        <div>ABOUT US</div>
     </div>
-    <div>
-
+    <div class="nav">
         <ul>
             {{#each about_nav}}
-            <li>{{title}}</li>
+            <li class="list">{{title}}</li>
             {{/each}}
         </ul>
+        <div class="content">
+            <div class="custom-scroll map">
+                <p>尊敬的游客：</p>
+                <p class="txt">欢迎您来到全国首席爱情主题庄园——中国薰衣草庄园！
+                    为方便您更好地到达园区，特对庄园路线进行如下说明：</p>
+                <p class="txt">目前，到达园区有三条路线，游客可根据自己所在地选择最便捷的路线：</p>
+                <p>1、龙门大道——过龙门北桥——沿伊河东岸向北行5公里——沿希望大道前行即到。（详见下图红色路线）</p>
+                <p>2、龙门大道——高铁大道（颐君大厦向东）——过高铁大桥——规划路——沿希望大道前行即到（详见下图绿色路线）</p>
+                <p>3、开元大道——伊河大桥——右拐沿河堤大道直行4公里——沿希望大道前行即到（详见下图蓝色路线）</p>
+                <h3>注：庄园正南门在希望大道</h3>
+                <p class="txt">图片导航：</p>
+                <img src="./images/about/1468051954.png" alt="">
+                <p class="txt">地图导航:</p>
+                <div id="allmap"> </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="custom-scroll recommend">
+                <p> 洛阳中国薰衣草庄园位于伊河东岸，伊滨区的生态廊道上，南临龙门石窟，东以二广高速为界，高铁大道及希望大道两条跨河大道自西向东穿过整个庄园。庄园总面积达6000多亩，是集旅游观光、特色农业、度假养生、星级酒店等功能为一体的大型创意观光农业园，我们定位为河南唯一，行业领跑。庄园是以爱情为主题，以浪漫爱情文化作为园区的设计灵魂，极力打造出龙门山下的普罗旺斯，伊水之畔的玫瑰花园。庄园分两期开发，目前一期开发的是位于中部的紫香花田片区，总面积达2000多亩。 </p>
+                <p>“龙门山下的普罗旺斯，伊水之畔的玫瑰花园”，自2014年6月21日开园以来，庄园成功举行薰衣草旅游推介会、国际薰衣草文化节、挑战吉尼斯最长香草蛋糕、薰衣草丰收节、薰衣草万人丰收宴等一系列精彩活动，吸引了省内外近25万名游客前来游览观光。2014年10月，国际薰衣草文化节曾被央视四套重点报道，庄园先后荣获“2014年度洛阳市旅游工作先进单位”、2014中国最美旅游度假区北赛区前三甲。目前在省内外享有高度知名度！</p>
+                <p> 2015年牡丹文化节期间，中国薰衣草庄园举办的国际风车节，受到了省内外各家媒体的关注，央视4套及人民日报均对活动进行了大力度的报道。活动期间，累计吸引了游客近32万人次，来自安徽、江苏、江西、山东的知名景区考察团先后莅临景区调研！</p>
+                <p>庄园整体规划为三大主题片区：以桃花林和腊梅林为主体的“生态农庄”片区；以薰衣草种植为主体的“紫香花田”片区；以玫瑰种植为主体的“玫瑰谷”片区。庄园极力营造浪漫温馨的氛围，建造一系列高雅时尚的场所以承载各类主题活动；旅游产品上，策划覆盖表白、求婚、蜜月、怀旧、置业、亲子等与爱情相关的特色活动，使庄园内的所有活动都打上甜蜜浪漫的标签，让处在各个人生阶段的有情人都能在这里找到属于自己的乐园。</p>
+                <p>薰衣草有“百草之王”的美称，广泛使用于医疗、美容各个领域。薰衣草精油对头痛、疤痕、内分泌失调、神经衰弱、失眠等各类常见症状都有疗效，是目前非常热门的产品。庄园内种植的薰衣草和玫瑰，将形成从育苗--加工--包装到销售的完整产业链，弥补河南在香草深加工行业的空白，成为中原地区香草种植行业领跑者。另外还可以依托洛阳高校和国内专家的技术支持，为薰衣草产业链的发展插上腾飞的翅膀。</p>
+                <p>洛阳•中国薰衣草庄园必将成为中原地区一颗璀璨的明珠，成为高品位休闲旅游度假的理想去处！</p>
+            </div>
+        </div>
+
     </div>
+
 </div>
 
 
 
 <script src="./js/about.js"></script>
+<script src="./js/scrollbot.min.js"></script>
+
+<script>
+    var bar = new scrollbot('.map',5);
+    noOrbk('.map',bar);
+
+    var rec = new scrollbot('.recommend',5);
+    noOrbk('.recommend',rec);
+
+    function noOrbk(ele,sty) {
+        sty.setStyle({
+            display:'none'
+        },{
+            display:'none'
+        });
+
+        $(ele).on('mouseenter',function () {
+            sty.setStyle({
+                background:'#9400D3',
+                display:'block'
+            },{
+                background:'#FCDEFC',
+                display:'block'
+            })
+        });
+        $(ele).on('mouseleave',function () {
+            sty.setStyle({
+                background:'#9400D3',
+                display:'none'
+            },{
+                background:'#FCDEFC',
+                display:'none'
+            })
+        });
+    }
+</script>
+<script>
+    $('.content').hide();
+    $('.content').eq(0).show();
+    $('.list').mousemove(function () {
+
+        idx = $(this).index();
+        $('.content').eq(idx).show();
+        $('.content').not($('.content').eq(idx)).hide();
+
+    })
+</script>
+<script>
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(112.53, 34.62);
+    map.centerAndZoom(point,15);
+
+    map.addControl(new BMap.NavigationControl());        // 添加平移缩放控件
+    map.addControl(new BMap.ScaleControl());             // 添加比例尺控件
+    map.addControl(new BMap.OverviewMapControl());       //添加缩略地图控件
+    map.enableScrollWheelZoom();                         //启用滚轮放大缩小
+
+    var removeMarker = function(e,ee,marker){
+        map.removeOverlay(marker);
+    }
+    //创建右键菜单
+    var markerMenu=new BMap.ContextMenu();
+    markerMenu.addItem(new BMap.MenuItem('删除',removeMarker.bind(marker)));
+
+    var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    marker.addContextMenu(markerMenu);
+</script>
+
