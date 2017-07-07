@@ -48,10 +48,9 @@
     background-color: #8E72A6;
     transition: all 1s ease 0s;
 }
-.navs ul li:hover{
+.navs ul li.active{
     background-color: #471C6C;
 }
-
 .custom-scroll{
     width: 660px;
     height: 530px;
@@ -72,5 +71,8 @@
     height: 640px;
 }
 .recommend p{
+    text-indent: 50px;
+}
+.cooperation p{
     text-indent: 50px;
 }

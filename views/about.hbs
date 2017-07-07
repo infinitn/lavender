@@ -37,7 +37,52 @@
                 <p>洛阳•中国薰衣草庄园必将成为中原地区一颗璀璨的明珠，成为高品位休闲旅游度假的理想去处！</p>
             </div>
         </div>
+        <div class="content">
+            <div class="custom-scroll scenery">
+                <p class="scen">
 
+                </p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="custom-scroll shopping">
+                <p>薰衣草文化馆位于薰衣草庄园紫韵香街游客中心二楼，馆内面积1000平方米，是薰衣草庄园主题文化产业的重要组成部分，文化馆分为三个片区：薰衣草科普区、精品展示区、产品体验区，其中包括薰衣草精油、枕头、香草花茶、薰衣草小熊等薰衣草主题产品以及庄园自产的农产品，共有十四大品类四百多种产品，是中原地区最大最为齐全的香草文化馆</p>
+                <div class="shop">
+
+                </div>
+                <p>薰衣草庄园购物中心特色产品</p>
+                <p>QQ：2710702079</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="custom-scroll wedding">
+                <p style="text-align: center">洛阳·中国薰衣草庄园婚庆部</p>
+                <p style="text-indent: 50px;">作为全国首席爱情主题庄园，中国薰衣草庄园在打造景观时极力营造浪漫的氛围，自2014年6月21日成立的婚庆部，以承载一系列高雅时尚的婚庆主题活动为目的，打造全国最大以薰衣草为为主题的婚纱摄影基地！目前，洛阳大部分知名婚纱影楼均与园区签订合作协议，每天在庄园拍摄婚纱照的新人达100对之多！</p>
+                <p style="text-indent: 50px;">赏浪漫薰衣草，办唯美草坪婚礼！薰衣草庄园婚庆部有一支专业的婚庆策划团队，依托园区优质的室外草坪资源，承接浪漫室外草坪的举行！在园区内的爱丽丝钢琴餐厅、走过咖啡屋等多个区域，均可举办浪漫的草坪婚礼！</p>
+                <p style="text-indent: 50px;">龙门山下的普罗旺斯，伊河之畔的浪漫花园！从相识、相知、相恋到走进婚礼，从金婚、银婚到钻石婚，从曾经年少到白发苍苍，这里为您精心设计了一条爱情的线索，一条亲情的纽带！不得不说；“我一生中最浪漫的时光，都与这里息息相关。</p>
+                <img src="./images/about/1422337655.jpg" alt="">
+                <img src="./images/about/1422337675.jpg" alt="">
+                <img src="./images/about/1422337683.jpg" alt="">
+                <img src="./images/about/1422337698.jpg" alt="">
+                <img src="./images/about/1422337707.jpg" alt="">
+                <img src="./images/about/1422337717.jpg" alt="">
+                <p>拍唯美婚纱，办浪漫婚礼！</p>
+                <p>婚庆专线：15003798381   闫经理</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="custom-scroll cooperation">
+                <p style="text-align: center">欢迎加入我们的薰衣草事业</p>
+                <p>洛阳·中国薰衣草庄园总面积6000多亩，是集旅游观光、特色农业、度假养生、五星级酒店等功能为一体的大型创意观光农业园，是中原地区面积最大，香草品种最多的“爱情”主题庄园。</p>
+                <p>“龙门山下的普罗旺斯，伊水之畔的玫瑰花园”，自2014年6月21日开园以来，庄园成功举行薰衣草旅游推介会、国际薰衣草文化节、挑战吉尼斯最长香草蛋糕、薰衣草丰收节、薰衣草万人丰收宴等一些列精彩活动，吸引了省内外近25万名游客前来游览观光。2014年10月，国际薰衣草文化节曾被央视四套重点报道，庄园荣获2014中国最美旅游度假区北赛区前三甲，目前在省内外享有高度知名度！</p>
+                <p>洛阳·中国薰衣草庄园以强大的品牌资源、雄厚的运作资本、完善的营销网络、专业的营销团队、先进的经营理念等众多优质资源，竭诚欢迎您的合作！</p>
+                <p>招商条件</p>
+                <p>1、具有强烈的发展欲望，能与企业先进的经营理念保持一致，与企业达成开拓市场、 追求共赢的共识。</p>
+                <p>2、具备一定的资金实力。</p>
+                <p>3、具有比较完善的渠道销售网络，专业的销售团队。</p>
+                <p>招商合作电话：0379--67676698</p>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -46,6 +91,41 @@
 
 <script src="./js/about.js"></script>
 <script src="./js/scrollbot.min.js"></script>
+<script>
+    $.get('/api/about/',function(result){
+        console.log(result);
+        if(result.success){
+            console.log(result.data);
+            for(var i = 0; i < result.data.length;i++){
+                var s = result.data[i];
+                $('<img src="'+ s.img +'">').appendTo($('.scen'));
+            }
+        }else{
+            alert(result.data);
+        }
+    });
+    $.get('/apis/about/',function(result){
+        console.log(result);
+        if(result.success){
+            console.log(result.data);
+            for(var i = 0; i < result.data.length;i++){
+                var s = result.data[i];
+
+                $('.shop')[0].innerHTML += '<div>'+
+                                '<img src="'+ s.url +'">'+
+                                '<p class="s_title">名称：'+ s.title +'</p>'+
+                                '<p class="s_price">售价：'+ s.price +'元</p>'+
+                                '<p>'+ s.virtue_title +'</p>'+
+                                '<p>'+ s.virtue_1 +'</p>'+
+                                '<p>'+ s.virtue_2 +'</p>'+
+                                '<p>'+ s.virtue_3 +'</p>'+
+                        '</div>';
+            }
+        }else{
+            alert(result.data);
+        }
+    });
+</script>
 
 <script>
     var bar = new scrollbot('.map',5);
@@ -53,6 +133,18 @@
 
     var rec = new scrollbot('.recommend',5);
     noOrbk('.recommend',rec);
+
+    var nec = new scrollbot('.scenery',5);
+    noOrbk('.scenery',nec);
+
+    var shop = new scrollbot('.shopping',5);
+    noOrbk('.shopping',shop);
+
+    var wed = new scrollbot('.wedding',5);
+    noOrbk('.wedding',wed);
+
+    var coop = new scrollbot('.cooperation',5);
+    noOrbk('.cooperation',coop);
 
     function noOrbk(ele,sty) {
         sty.setStyle({
@@ -82,10 +174,11 @@
     }
 </script>
 <script>
+    $('.navs ul .list:first-child').addClass('active');
     $('.content').hide();
     $('.content').eq(0).show();
     $('.list').mousemove(function () {
-
+        $(this).addClass('active').siblings().removeClass('active');
         idx = $(this).index();
         $('.content').eq(idx).show();
         $('.content').not($('.content').eq(idx)).hide();
