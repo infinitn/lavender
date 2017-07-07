@@ -1,16 +1,21 @@
+<!--外联样式表-->
 <link rel="stylesheet" href="./css/about.css">
+<!--地图api-->
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=rSypO9uLv1GGqFk5ES9Lwasyp5NypeSN"></script>
 <div class="box">
+    <!--标题-->
     <div class="title">
         <div class="ti">关于庄园</div>
         <div>ABOUT US</div>
     </div>
     <div class="navs">
+        <!--导航-->
         <ul>
             {{#each about_nav}}
             <li class="list">{{title}}</li>
             {{/each}}
         </ul>
+        <!--交通指引-->
         <div class="content">
             <div class="custom-scroll map">
                 <p>尊敬的游客：</p>
@@ -27,6 +32,7 @@
                 <div id="allmap"> </div>
             </div>
         </div>
+        <!--庄园介绍-->
         <div class="content">
             <div class="custom-scroll recommend">
                 <p> 洛阳中国薰衣草庄园位于伊河东岸，伊滨区的生态廊道上，南临龙门石窟，东以二广高速为界，高铁大道及希望大道两条跨河大道自西向东穿过整个庄园。庄园总面积达6000多亩，是集旅游观光、特色农业、度假养生、星级酒店等功能为一体的大型创意观光农业园，我们定位为河南唯一，行业领跑。庄园是以爱情为主题，以浪漫爱情文化作为园区的设计灵魂，极力打造出龙门山下的普罗旺斯，伊水之畔的玫瑰花园。庄园分两期开发，目前一期开发的是位于中部的紫香花田片区，总面积达2000多亩。 </p>
@@ -37,13 +43,16 @@
                 <p>洛阳•中国薰衣草庄园必将成为中原地区一颗璀璨的明珠，成为高品位休闲旅游度假的理想去处！</p>
             </div>
         </div>
+        <!--庄园美景-->
         <div class="content">
+
             <div class="custom-scroll scenery">
                 <p class="scen">
 
                 </p>
             </div>
         </div>
+        <!--香草商店-->
         <div class="content">
             <div class="custom-scroll shopping">
                 <p>薰衣草文化馆位于薰衣草庄园紫韵香街游客中心二楼，馆内面积1000平方米，是薰衣草庄园主题文化产业的重要组成部分，文化馆分为三个片区：薰衣草科普区、精品展示区、产品体验区，其中包括薰衣草精油、枕头、香草花茶、薰衣草小熊等薰衣草主题产品以及庄园自产的农产品，共有十四大品类四百多种产品，是中原地区最大最为齐全的香草文化馆</p>
@@ -54,6 +63,7 @@
                 <p>QQ：2710702079</p>
             </div>
         </div>
+        <!--婚纱婚庆-->
         <div class="content">
             <div class="custom-scroll wedding">
                 <p style="text-align: center">洛阳·中国薰衣草庄园婚庆部</p>
@@ -70,6 +80,7 @@
                 <p>婚庆专线：15003798381   闫经理</p>
             </div>
         </div>
+        <!--市场合作-->
         <div class="content">
             <div class="custom-scroll cooperation">
                 <p style="text-align: center">欢迎加入我们的薰衣草事业</p>
@@ -87,10 +98,8 @@
 
 </div>
 
-
-
-<script src="./js/about.js"></script>
 <script src="./js/scrollbot.min.js"></script>
+<!--//数据请求-->
 <script>
     $.get('/api/about/',function(result){
         console.log(result);
@@ -126,7 +135,7 @@
         }
     });
 </script>
-
+<!--//滚动条-->
 <script>
     var bar = new scrollbot('.map',5);
     noOrbk('.map',bar);
@@ -173,6 +182,7 @@
         });
     }
 </script>
+<!--//排他逻辑-->
 <script>
     $('.navs ul .list:first-child').addClass('active');
     $('.content').hide();
@@ -185,6 +195,7 @@
 
     })
 </script>
+<!--地图-->
 <script>
     // 百度地图API功能
     var map = new BMap.Map("allmap");

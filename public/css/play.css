@@ -1,0 +1,92 @@
+.box{
+    width: 980px;
+    height: 600px;
+    margin: 0 auto;
+}
+.title{
+    width: 290px;
+    height: 60px;
+    float: left;
+    color: #461B6A;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.title::before{
+    content: '';
+    position: absolute;
+    right:15px;
+    top:10px;
+    width: 65px;
+    height: 81px;
+    background: url("/images/nybt.png");
+}
+.title .ti{
+    font-size: 25px;
+}
+/*nav*/
+.navs{
+    width: 690px;
+    height: 600px;
+    float: right;
+    padding-top: 40px;
+}
+.navs ul{
+    height: 28px;
+    width: 686px;
+
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.navs ul li{
+    float: left;
+    width: 98px;
+    background-color: #8E72A6;
+    transition: all 1s ease 0s;
+}
+.navs ul li.active{
+    background-color: #471C6C;
+}
+/*------------------------*/
+.custom-scroll{
+    width: 660px;
+    height: 530px;
+    margin-top: 4px;
+    overflow: auto;
+    color: #664184;
+    font-size: 18px;
+    line-height: 50px;
+}
+.spa p,.car p,.play-field p,.child p,.golf p,.tennis p{
+    text-indent: 50px;
+}
+.car img,.play-field img,.child img,.golf .img{
+    width: 550px;
+    padding-left:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
