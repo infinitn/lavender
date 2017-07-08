@@ -159,12 +159,12 @@ header .nav li .second-nav li a:hover{
 	text-align: center;
 	background-color: #7A2292;
 	border-radius: 10px;
-	animation: advertis  10s linear 0s infinite alternate;
+	animation: advertising  10s linear 0s infinite alternate;
 }
-.advertis a{
+.advertising a{
 	color: white;
 }
-@keyframes advertis {
+@keyframes advertising {
 	from{
 		top: 50px;
 	}

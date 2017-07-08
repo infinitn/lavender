@@ -85,8 +85,8 @@ router.get('/map', function(req, res, next) {
         message:req.query.message
     });
 });
-router.get('/advertis', function(req, res, next) {
-    res.render('./advertis');
+router.get('/advertising', function(req, res, next) {
+    res.render('./advertising');
 });
 
 
