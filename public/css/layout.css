@@ -149,7 +149,7 @@ header .nav li .second-nav li a:hover{
 
 
 /*在线购票*/
-.advertising{
+.advertis{
 	position: absolute;
 	top: 300px;
 	left: 15px;
@@ -159,12 +159,12 @@ header .nav li .second-nav li a:hover{
 	text-align: center;
 	background-color: #7A2292;
 	border-radius: 10px;
-	animation: advertising  10s linear 0s infinite alternate;
+	animation: advertis  10s linear 0s infinite alternate;
 }
-.advertising a{
+.advertis a{
 	color: white;
 }
-@keyframes advertising {
+@keyframes advertis {
 	from{
 		top: 50px;
 	}
