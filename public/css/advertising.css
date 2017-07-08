@@ -1,0 +1,152 @@
+.advertising{
+    display: none;
+}
+.sec{
+    width: 980px;
+    height: 600px;
+    margin: 0 auto;
+}
+.box{
+    width: 690px;
+    height: 600px;
+    float: right;
+    padding-top: 40px;
+}
+.title{
+    background-color: #8E72A6;
+    color: #fff;
+    font-size: 14px;
+    height: 28px;
+    width: 675px;
+    padding-left: 15px;
+    line-height: 28px;
+    border-radius: 5px;
+}
+.box ul li{
+    width: 315px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    background-image:-webkit-linear-gradient(top,#7A2292,#BA55D3);
+    box-shadow: 1px 1px 5px 3px #471C6C;
+    border-radius: 15px;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
+.a{
+    width: 660px;
+    height: 340px;
+    background-color: #EE82EE;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 3px #ee45ee;
+    display: none;
+}
+.a p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 30px;
+}
+.a .hint{
+    text-indent: 10px;
+}
+.a .cont{
+    text-indent: 60px;
+}
+.a .price{
+    width: 630px;
+    height: 180px;
+    margin: 15px;
+    text-align: center;
+    /*background-color: #ddd;*/
+}
+.a .price .privilege{
+    float: left;
+    width: 200px;
+    height: 180px;
+}
+.a .price .privilege p:nth-child(1){
+    font-size: 20px;
+    line-height: 40px;
+    color: #eee;
+}
+.a .price .privilege p:nth-child(2){
+    font-size: 35px;
+    margin-top: 15px;
+    color: #7A2292;
+}
+.a .price .verify{
+    width: 400px;
+    height: 180px;
+    float: left;
+}
+.a .price .verify p:nth-child(1){
+    text-align: left;
+    text-indent: 100px;
+}
+.a .price .verify input{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
+.a .price .verify p.ver{
+    font-size: 14px;
+    color: #ccc;
+}
+.a .price .verify p:nth-child(5) span{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    margin-top:10px;
+    background-color: #3c763d;
+    line-height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 1px #ccc;
+    cursor: pointer;
+}
+.a .price .verify b{
+    color: red;
+}
+.a .yanzheng{
+    text-align: center;
+}
+.a .yanzheng b{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="/css/advertising.css">
+
+<div class="sec">
+    <div class="box">
+        <p class="title">在线订票</p>
+        <ul class="piao">
+            <li>情侣票</li>
+            <li>单身票</li>
+        </ul>
+        <div style="clear: both"></div>
+        <div class="love a">
+            <p class="hint">温馨提示：</p>
+            <p class="cont">拍照时请照顾一下旁边的单身狗，不要人家太难堪！</p>
+            <div class="price">
+                <div class="privilege">
+                    <p>原价：<s>120元</s></p>
+                    <p>优惠价<br><br><b>99元</b></p>
+                </div>
+                <div class="verify">
+                    <p>请输入电话号码：</p>
+                    <input type="text"> <b> *</b>
+                    <p class="ver">格式：130 0000 0000</p>
+                    <p><span>确定</span></p>
+                </div>
+            </div>
+            <p class="yanzheng">您的验证码是：<b>123456789</b></p>
+            <p style="text-align: center">请牢记验证码！验证方式：前往景区专用窗口进行验证！</p>
+        </div>
+        <div class="dog a">
+            <p class="hint">温馨提示：</p>
+            <p class="cont">请照顾好自己，不要被别人秀恩爱秀一脸！</p>
+            <div class="price">
+                <div class="privilege">
+                    <p>原价：<s>60元</s></p>
+                    <p>优惠价<br><br><b>55元</b></p>
+                </div>
+                <div class="verify">
+                    <p>请输入电话号码：</p>
+                    <input type="text"> <b> *</b>
+                    <p class="ver">格式：130 0000 0000</p>
+                    <p><span>确定</span></p>
+                </div>
+            </div>
+            <p class="yanzheng">您的验证码是：<b>123456789</b></p>
+            <p style="text-align: center">请牢记验证码！验证方式：前往景区专用窗口进行验证！</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.a').eq(0).show();
+    $('.piao li').each(function (i) {
+       $(this).on('click',function () {
+            $('.a').eq(i).show().siblings($('.a')).hide();
+       });
+    });
+
+    $('.verify p span').each(function (i) {
+        $(this).on('click',function () {
+            $('.yanzheng b').text($('input').eq(i).val());
+            $('input').eq(i).val('');
+        })
+    })
+</script>

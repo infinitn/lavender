@@ -85,6 +85,9 @@ router.get('/map', function(req, res, next) {
         message:req.query.message
     });
 });
+router.get('/advertising', function(req, res, next) {
+    res.render('./advertising');
+});
 
 
 module.exports = router;
