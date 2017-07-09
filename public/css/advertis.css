@@ -1,4 +1,4 @@
-.advertising{
+.advertis{
     display: none;
 }
 .sec{
@@ -35,6 +35,9 @@
     text-align: center;
     color: white;
 }
+.box ul li.active{
+    background-image:-webkit-linear-gradient(top,#7A2292,#7A2292);
+}
 .a{
     width: 660px;
     height: 340px;
@@ -43,6 +46,10 @@
     border-radius: 10px;
     box-shadow: 1px 1px 5px 3px #ee45ee;
     display: none;
+}
+.dog{
+    background-color: #737373;
+    box-shadow: 1px 1px 5px 3px #000;
 }
 .a p{
     font-size: 16px;
@@ -60,7 +67,6 @@
     height: 180px;
     margin: 15px;
     text-align: center;
-    /*background-color: #ddd;*/
 }
 .a .price .privilege{
     float: left;
@@ -76,6 +82,9 @@
     font-size: 35px;
     margin-top: 15px;
     color: #7A2292;
+}
+.dog .price .privilege p:nth-child(2){
+    color: #f00;
 }
 .a .price .verify{
     width: 400px;

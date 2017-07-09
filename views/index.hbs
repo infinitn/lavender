@@ -1,0 +1,221 @@
+<style>
+    .page,.inner_c{
+        width: 1400px;
+        height: 646px;
+        position: relative;
+    }
+    .index_logo img{
+        width: 360px;
+        height: 300px;
+    }
+    .index_logo{
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -90px;
+        -webkit-perspective: 300px;
+        -moz-perspective: 300px;
+        -ms-perspective: 300px;
+        perspective: 300px;
+        transform-style: preserve-3d;
+        transform: translateY(0px);
+        display: none;
+    }
+    .i_page{
+        width: 1400px;
+        height: 646px;
+        -webkit-perspective: 300px;
+        -moz-perspective: 300px;
+        -ms-perspective: 300px;
+        perspective: 300px;
+        transform-style: preserve-3d;
+        overflow: hidden;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .i_page .img{
+        width: 1400px;
+        height: 800px;
+        transform: translateY(0px);
+        display: none;
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .index_text{
+        width: 360px;
+        height: 360px;
+        position: absolute;
+        top: 150px;
+        left: 300px;
+        z-index: 10;
+        background-color: rgba(255,255,255,0.4);
+        perspective: 300px;
+        -webkit-perspective: 300px;
+        -moz-perspective: 300px;
+        -ms-perspective: 300px;
+        transform-style: preserve-3d;
+        display: none;
+        border-radius: 50%;
+
+    }
+    .index_text .t_zg{
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 0 0 10px white;
+        display: none;
+        overflow: hidden;
+        width: 60px;
+        height: 36px;
+        color:#58245F;
+    }
+    .index_text .t_row{
+        position: absolute;
+        top: 100px;
+        left: 120px;
+        font-size: 26px;
+        overflow: hidden;
+    }
+    .index_text .t_xun{
+        position: absolute;
+        top: 100px;
+        left: 135px;
+        font-size: 30px;
+        font-weight: 600;
+        text-shadow: 0 0 10px white;
+        display: none;
+        overflow: hidden;
+        width: 150px;
+        height: 36px;
+        color:#58245F;
+    }
+    .index_text .t_cn{
+        position: absolute;
+        top: 160px;
+        left: 80px;
+        font-size: 20px;
+        display: none;
+        overflow: hidden;
+        width: 200px;
+        height: 24px;
+        color:#58245F;
+    }
+    .index_text .video{
+        position: absolute;
+        top: 210px;
+        left: 130px;
+        font-size: 30px;
+        font-weight: 300;
+        text-shadow: 0 0 10px white;
+        display: none;
+        /*overflow: hidden;*/
+        color:#58245F;
+    }
+    .video img{
+        position: absolute;
+        top: 50px;
+        left: 20px;
+    }
+</style>
+<div class="page">
+    <div class="inner_c">
+        <!--page0-->
+        <div class="index_logo">
+            <img src="/images/index/zxy_03.jpg" alt="" id="i_logo">
+        </div>
+        <!--page1-->
+        <div class="index_page1  i_page">
+            <img src="/images/index/bg1.jpg" alt="" id="page1_img1" class="img">
+            <!--<canvas id="canvas" width="360" height="360"></canvas>-->
+            <div class="index_text">
+                <div class="t_zg">中国</div>
+                <div class="t_row">|</div>
+                <div class="t_xun">薰衣草庄园</div>
+                <div class="t_cn">
+                    <p>全国首个爱情主题庄园</p>
+                </div>
+                <div class="video">
+                    <p>Video</p>
+                    <img src="/images/index/WMP12_008.ico" alt="" width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+        <!--page2-->
+        <div class="index_page2 i_page">
+            <img src="/images/index/bg2.jpg" alt="" id="page2_img1" class="img">
+            <!--<canvas id="canvas" width="360" height="360"></canvas>-->
+            <div class="index_text">
+                <div class="t_zg">中国</div>
+                <div class="t_row">|</div>
+                <div class="t_xun">薰衣草庄园</div>
+                <div class="t_cn">
+                    <p>全国首个爱情主题庄园</p>
+                </div>
+                <div class="video">
+                    <p>Video</p>
+                    <img src="/images/index/WMP12_008.ico" alt="" width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+        <!--page3-->
+        <div class="index_page3 i_page">
+            <img src="/images/index/bg3.jpg" alt="" id="page3_img1" class="img">
+            <!--<canvas id="canvas" width="360" height="360"></canvas>-->
+            <div class="index_text">
+                <div class="t_zg">中国</div>
+                <div class="t_row">|</div>
+                <div class="t_xun">薰衣草庄园</div>
+                <div class="t_cn">
+                    <p>全国首个爱情主题庄园</p>
+                </div>
+                <div class="video">
+                    <p>Video</p>
+                    <img src="/images/index/WMP12_008.ico" alt="" width="50px" height="50px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/velocity.min.js"></script>
+<script src="/js/tween.js"></script>
+<script src="/js/animate.js"></script>
+<script>
+    var page=0;
+    var lock=true;
+    enter[0]();
+    var timer;
+    timer=setInterval(function(){
+//        clearInterval(timer);
+        if(!lock){
+            return;
+        }
+        exit[page]();
+        page++;
+        console.log(page);
+        if(page>3){
+            page=0;
+        }
+
+        enter[page]();
+        lock=false;
+    },3000);
+//    var canvas=document.getElementById('canvas');
+//    var ctx=canvas.getContext('2d');
+//    ctx.beginPath();
+//    ctx.arc(180,180,180,0,2*Math.PI,true);
+//    ctx.fillStyle='rgba()';
+//    ctx.fill();
+//    ctx.closePath();
+//
+//
+//    ctx.font="bolder 30px 楷体";
+//    ctx.fillStyle="rgba(90,21,152,0.8)";
+//    ctx.fillText("中国 | 薰衣草庄园",50,150);
+
+</script>

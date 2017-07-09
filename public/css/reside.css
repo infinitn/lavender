@@ -1,45 +1,46 @@
-#eat_wrap{
+#reside_wrap{
     background: url("../images/nybj1.jpg") no-repeat;
     width: 1400px;
     height: 646px;
     margin: 0 auto;
 }
-.eat_box{
+.reside_box{
     width: 980px;
     height: 646px;
     margin: 0 auto;
     /*overflow: hidden;*/
 }
-.eat_left{
+.reside_left{
     width: 250px;
     float: left;
     box-sizing: border-box;
     overflow: hidden;
 }
-.eat_right{
+.reside_right{
     width: 690px;
     float: left;
 }
-.eat_l_bt{
+.reside_l_bt{
     width: 250px;
     height: 80px;
-    /*padding-right: 45px;*/
+    padding-reside: 45px;
     box-sizing: border-box;
     color: #461B6A;
     position: relative;
-    text-align: center;
 }
-.eat_l_cn{
+.reside_l_cn{
     font-size: 28px;
     padding-top: 20px;
+    text-align: center;
     box-sizing: border-box;
 }
-.eat_l_en{
+.reside_l_en{
     font-size: 16px;
     padding-top: 0px;
+    text-align: center;
     box-sizing: border-box;
 }
-.eat_l_bt::after{
+.reside_l_bt::after{
     content: '';
     width: 45px;
     height: 60px;
@@ -51,18 +52,12 @@
 }
 
 /*右边*/
-.eat_r_wrap{
+.reside_r_wrap{
     width: 690px;
     height: 600px;
 
 }
-.eat_r_wrap p{
-    text-align: center;
-}
-.eat_r_wrap p span{
-    text-align: left;
-}
-.eat_r_nav{
+.reside_r_nav{
     width: 690px;
     height: 30px;
     background-color: #8e72a6;
@@ -70,45 +65,61 @@
     box-sizing: border-box;
     margin-top: 20px;
 }
-.eat_r_nav>ul{
+.reside_r_nav>ul{
     list-style: none;
 
 }
-.eat_r_nav>ul li{
+.reside_r_nav>ul li{
     height: 30px;
     width: 90px;
     color: white;
     float: left;
     text-align: center;
-
     font-size: 14px;
     line-height: 30px;
 }
-.eat_r_nav>ul li:hover{
-    background-color:#664184;
-    cursor: pointer;
-}
-.eat_r_content,.eat_r_scrollbar{
+/*.reside_r_nav>ul li:hover{*/
+    /*background-color:#664184;*/
+    /*cursor: pointer;*/
+/*}*/
+.reside_r_content,.reside_r_scrollbar{
     width: 690px;
     height: 500px;
 }
-.eat_r_s_item{
+.reside_r_s_item{
     width: 690px;
     height: 500px;
     overflow-y: scroll;
     overflow-x: hidden;
-    color: purple !important;
-    line-height: 30px;
-    font-size: 18px;
-    padding-top: 15px;
 }
-.eat_r_s_item>ul{
+.reside_r_s_item ul{
     display: none;
+    /*overflow-y: auto;*/
 }
-.eat_r_s_item>ul:nth-child(1){
+.reside_r_s_item ul:nth-child(1){
     display: block;
 }
-.mar{
-    margin-bottom: 15px;
+/*公共字体设置*/
+p{
+   font-size: 18px;
+    color:#7D4190;
+    line-height: 40px;
+    text-indent: 2em;
+    text-align: left;
+}
+.p_center{
+    text-align: center;
+    line-height:50px;
+}
+p.p_phone{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 100px;
+    text-align: center;
+}
+p.p_bold{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 50px;
 }
 

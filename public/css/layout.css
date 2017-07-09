@@ -21,8 +21,6 @@ section{
 	height: 650px;
 	width: 1400px;
 	margin: 0 auto;
-	background: url("/images/nybj1.jpg");
-	position: relative;
 }
 footer{
 	height: 120px;
@@ -146,48 +144,6 @@ header .nav li .second-nav li a:hover{
 	text-align: center;
 	line-height:55px;
 }
-
-
-/*在线购票*/
-.advertis{
-	position: absolute;
-	top: 300px;
-	left: 15px;
-	width: 200px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	background-color: #7A2292;
-	border-radius: 10px;
-	animation: advertising  10s linear 0s infinite alternate;
-}
-.advertising a{
-	color: white;
-}
-@keyframes advertising {
-	from{
-		top: 50px;
-	}
-	to{
-		top:300px;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
